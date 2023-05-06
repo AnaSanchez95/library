@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>My Books Library</h1>
+    </header>
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Menu</h2>
+        </div>
+        <div class="books">
+            <h2>My Books</h2>
+            <div class="books-cards">
+                <div class="card">
+                    <button class="cancel">x</button>
+                    <h3 class="title">Title</h3>
+                    <p class="author">Author</p>
+                    <p class="pages">Pages</p>
+                    <p class="status">Status</p>
+                </div>
+                <div class="card">
+                    <button class="cancel">x</button>
+                    <h3 class="title">Don Quijote de la mancha</h3>
+                    <p class="author">By <span id="author-span">Cervantes</span></p>
+                    <p class="pages">Pages: <span id="pages-span">300</span></p>
+                    <p class="status">Read</p>
+                </div>
+                
+                <div class="empty-card">
+                    <div class="empty-card-buttons">
+                        <button id="Add-book-btn">Add Book</button>
+                        <button id="clear-btn">Clear</button>
+                    </div>
+                    <input type="text" placeholder="Title" id="title">
+                    <input type="text" placeholder="Author" id="author">
+                    <div id="pages-div">
+                        <label for="pages">Pages</label>
+                        <input id="pages" type="number" placeholder="Pages">
+                    </div>
+                    <div id="status-div">
+                        <label for="checkbox-read">Read</label>
+                        <input id="checkbox-read" type="checkbox">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Ana Sánchez</footer>
+</body>
+</html>
