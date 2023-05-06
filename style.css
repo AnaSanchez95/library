@@ -48,6 +48,7 @@ header h1{
     background-color: blanchedalmond;
     max-height: 250px;
     padding: 20px;
+    padding-top: 10px;
     border-radius: 15px;
     box-shadow: 1px 1px 3px 1px rgb(200, 194, 194);
     display: grid;
@@ -84,10 +85,12 @@ header h1{
 }
 .title{
     grid-area: 2 / 1 / 3 / 3;
-    font-size: 1.3rem;    
+    font-size: 1.3rem;
+    min-width: 200px;    
 }
 .author{
     grid-area: 3 / 1 / 4 / 3;
+    min-width: 200px; 
 }
 .pages{
     grid-area: 4 / 1 / 5 / 2;

@@ -23,8 +23,15 @@ function checkReadStatus(readStatus) {
 function cancelButton() {
   let btnCancel = document.querySelectorAll(".cancel");
   btnCancel.forEach((button) => {
-    button.addEventListener("click", () => button.parentNode.remove());
-  });
+    button.addEventListener("click", () => {
+      myLibrary.forEach(book => {
+        let i = button.parentNode.id;
+        console.log(i);
+        myLibrary.splice(i,1);
+        button.parentNode.remove()
+      });   
+    });  
+  }); 
 }
 
 function addBook() {
